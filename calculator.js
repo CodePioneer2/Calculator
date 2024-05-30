@@ -1,3 +1,11 @@
+const num1 = 3;
+const operator = "+";
+const num2 = 1;
+
+const operate = (num1, num2, operator) => {
+    add(num1, num2);
+}
+
 const add = (a, b) => a + b;
 
 const substract = (a, b) => a - b;
