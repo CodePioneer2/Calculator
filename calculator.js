@@ -1,30 +1,24 @@
-const num1 = 3;
-const operator = "+";
-const num2 = 1;
+const buttons = document.querySelectorAll(".btn-number, .btn-operator");
+const display = document.querySelector(".display");
+const equalsButton = document.querySelector(".btn-equals");
+const clearButton = document.querySelector(".btn-clear");
 
-const operate = (num1, num2, operator) => {
-    add(num1, num2);
-}
+let displayData = "";
 
-const add = (a, b) => a + b;
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const buttonValue = button.getAttribute("data-num");
+    displayData += buttonValue;
+    display.textContent = displayData;
+  });
+});
 
-const substract = (a, b) => a - b;
+equalsButton.addEventListener("click", () => {
+  displayData = eval(displayData);
+  display.textContent = displayData;
+});
 
-const sum = (array) => {
-    return array.reduce((total, current) => total + current, 0);
-}
-
-const multiply = (array) => {
-    return array.reduce((total, current) => total * current)
-}
-
-const power = (a,b) => Math.pow(a, b);
-
-const factorial = (n) => {
-    if (n === 0) return 1;
-    let product = 1;
-    for (let i = n; i > 0; i--){
-        product *= i;
-    }
-    return product;
-}
+clearButton.addEventListener("click", () => {
+  displayData = "";
+  display.textContent = displayData;
+});
