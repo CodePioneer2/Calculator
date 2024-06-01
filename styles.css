@@ -1,0 +1,46 @@
+
+h1{
+  text-align: center;
+  color: darkkhaki;
+  font-size: 50px;
+  font-weight: bold;
+}
+.container {
+  background: black;
+  width: max-content;
+  margin: auto;
+  border: 10px solid darkgoldenrod;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+.display{
+  width: 100%;
+  background-color: darkgrey;
+  height: 50px;
+  font-size: 48px;
+  display: flex;
+  justify-content: flex-end;
+}
+.buttons{
+  max-width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+}
+button{
+  flex: 1 25%;
+  padding: 15px;
+  font-size: 25px;
+  border-radius: 3px;
+}
+.btn-number{
+  background-color: grey;
+}
+.btn-operator{
+  background-color: orange;
+}
+.btn-equals{
+  background-color: darkseagreen;
+}
+.btn-clear{
+  background-color: crimson;
+}
