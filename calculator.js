@@ -50,7 +50,7 @@ function operate(a, b, operator) {
       display.textContent = a * b;
       break;
     case '/':
-      display.textContent = a / b;
+      display.textContent = (a / b).toFixed(2);
       break;
     default:
       console.log('error');
