@@ -7,6 +7,10 @@
 body {
   height: 100vh;
   position: relative;
+  background-image: url(./assets/tavern___background_illustration_for_selling_by_doodle_space_dc299kz-fullview.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .calculator {
   position: absolute;
@@ -44,12 +48,21 @@ button:hover {
   background-color: rgb(109, 201, 171);
 }
 .display {
+  display: flex;
+  align-items: center;
   border: 1px solid black;
   width: 100%;
-  padding: 20px;
-  font-size: 22px;
-  color: black;
+  height: 80px;
+  font-size: 39px;
+  padding: 25px;
+  color: #fff;
   border-radius: 4px;
   border: none;
-  background-color: white;
+  background-color: #000;
+}
+h1{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 50px;
+  color: white;
 }
